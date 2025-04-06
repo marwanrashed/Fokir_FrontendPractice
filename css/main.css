@@ -55,7 +55,7 @@
 
 .left-inner-column,
 .right-inner-column {
-    padding: 100px 0;
+    padding: 100px 40px;
     margin: auto;
 }
 
@@ -181,7 +181,6 @@
 /* About Section */
 .box{
     width: 100%;
-    position: relative;
     border: #555555  solid 5px;
     border-radius: 2%;
 }
@@ -190,32 +189,55 @@
     top: 20px;
     left: 20px;
     position: relative;
-    z-index: 1;
 }
 
 .box .box-img img {
     width: 100%;
     border-radius: 2%;
-    position: relative;
 }
 
 .box-img .shadow-layer{
     border-radius: 2%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, .6);
-    transition: all .5s;
-    opacity: 0;
-    overflow: hidden;
-}
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top:100%;
+    left:0px;
+    bottom: 0px;
+    right: 0px;
+    transition: all 0.5s;
+    opacity: 0;}
 
 .box .box-img:hover .shadow-layer {
+    top: 0px;
     height: 100%;
     opacity: 1;
+    cursor: pointer
+}
 
+.about .shadow-layer .social-icons {
+    position: relative;
+    top: 50%;
+    left: 35%;
+}
+
+.social-icons .fa-brands {
+    color: white;
+    /* font-size: 70px; */
+    font-weight: 400;
+}
+
+.social-icons i {
+    margin: 0 8px;
+}
+
+.fa-facebook-f:hover, 
+.fa-twitter:hover,
+.fa-google:hover,
+.fa-github:hover {
+    color:#FF305B;
+    transition: all 0.5s;
 }
 
 
