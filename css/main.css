@@ -41,7 +41,7 @@
 /* Containers */
 
 .common-container {
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 
@@ -53,8 +53,24 @@
     text-align: center;
 }
 
-/* Sections Classes */
+.left-inner-column,
+.right-inner-column {
+    padding: 100px 0;
+    margin: auto;
+}
 
+.left-inner-column{
+    width: 40%;
+    float: left;
+}
+
+.right-inner-column{
+    width: 60%;
+    float: right;
+}
+
+/* Sections Classes */
+/* Hero section */
 .hero {
     background-image: url('../images/hero\ img.jpg');
     height: 100vh;
@@ -161,3 +177,46 @@
         "wdth" 100;
 
 }
+
+/* About Section */
+.box{
+    width: 100%;
+    position: relative;
+    border: #555555  solid 5px;
+    border-radius: 2%;
+}
+
+.box-img {
+    top: 20px;
+    left: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.box .box-img img {
+    width: 100%;
+    border-radius: 2%;
+    position: relative;
+}
+
+.box-img .shadow-layer{
+    border-radius: 2%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    transition: all .5s;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.box .box-img:hover .shadow-layer {
+    height: 100%;
+    opacity: 1;
+
+}
+
+
+
