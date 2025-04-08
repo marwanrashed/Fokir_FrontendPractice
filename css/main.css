@@ -149,6 +149,13 @@
     margin: auto;
 }
 
+.footer-container{
+
+    width: 40%;
+    margin: auto;
+    padding: 50px 0;
+}
+
 /* Sections Classes */
 /* Hero section */
 .hero {
@@ -568,3 +575,33 @@
     float: left;
     width: 23%;
 }
+
+
+
+/* footer section */
+
+.footer {
+
+    width: 100%;
+    background-color: #333333;
+    position: relative;
+    text-align: center;
+}
+
+.footer .footer-container .social-icons{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.footer .footer-container p {
+
+    color: white;
+}
+
+.footer .footer-container a {
+
+    color: #FF305B;
+    text-decoration: none;
+}
+
