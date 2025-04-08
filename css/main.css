@@ -122,9 +122,6 @@
 .service-inner-container {
 
     width: 100%;
-    margin: auto;
-    padding-top: 100px;
-    padding-bottom: 50px;
     position: relative;
 
 }
@@ -132,9 +129,6 @@
 .portfolio-container {
 
     width: 100%;
-    margin: auto;
-    padding-top: 100px;
-    padding-bottom: 50px;
 
 }
 
@@ -142,6 +136,17 @@
     width: 80%;
     margin: auto;
     padding: 100px 0;
+}
+
+.service-inner-container, 
+.portfolio-container,
+.testimonial-container,
+.blog-container,
+.contact-container {
+
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin: auto;
 }
 
 /* Sections Classes */
