@@ -129,6 +129,21 @@
 
 }
 
+.portfolio-container {
+
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+}
+
+.stats-container {
+    width: 80%;
+    margin: auto;
+    padding: 100px 0;
+}
+
 /* Sections Classes */
 /* Hero section */
 .hero {
@@ -150,6 +165,7 @@
 .nav-bar {
     width: 80%;
     position: fixed;
+    z-index: 100;
 }
 
 .hero .nav-logo {
@@ -428,7 +444,6 @@
 /* portfolio section */
 
 .portfolio {
-    position: relative;
     text-align: center;
 }
 
@@ -458,16 +473,14 @@
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.portfolio-card {
-    position: absolute;
+/* .portfolio-card {
     left: 10%;
-}
+} */
 
 .portfolio-item {
     width: 30%;
     float: left;
     padding: 30px;
-    position: relative;
 
 }
 
@@ -507,4 +520,46 @@
     right: 20px;
     font-size: 24px;
     color:#FF305B;
+}
+/* Stats Section */
+
+.stats {
+    text-align: center;
+}
+
+.stats i, 
+.stats h2 {
+    margin-bottom: 20px;
+
+
+}
+
+.stats i {
+    font-size: 30px;
+    color: #FF305B;
+}
+
+.stats h2, .stats h3 {
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: larger;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+}
+
+.stats h3 {
+    color: #555555;
+}
+
+.stats h2 {
+    font-size: 24px;
+}
+
+.stats-card .stats-item {
+    float: left;
+    width: 23%;
 }
