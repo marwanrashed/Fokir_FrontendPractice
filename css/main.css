@@ -67,7 +67,7 @@
     left: 47%;
     width: 100px;
     height: 10px;
-    border-bottom:#FF305B solid 1px;
+    border-bottom: #FF305B solid 1px;
     border-top: #FF305B solid 1px;
 
 }
@@ -428,6 +428,83 @@
 /* portfolio section */
 
 .portfolio {
-
+    position: relative;
     text-align: center;
+}
+
+.portfolio-menu {
+    text-transform: uppercase;
+    width: 30%;
+    margin: auto;
+}
+
+
+.portfolio .portfolio-menu ul {
+
+    list-style-type: none;
+    float: left;
+    color: #333333;
+}
+
+.portfolio .portfolio-menu li {
+    margin: 15px;
+    float: left;
+}
+
+.portfolio .portfolio-menu li:hover {
+    color:#FF305B;
+    cursor: pointer;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.portfolio-card {
+    position: absolute;
+    left: 10%;
+}
+
+.portfolio-item {
+    width: 30%;
+    float: left;
+    padding: 30px;
+    position: relative;
+
+}
+
+.portfolio-img {
+    position: relative;
+}
+
+.portfolio-item .portfolio-img img {
+    width: 100%;
+}
+
+.portfolio-item .portfolio-shadow-layer {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all 0.5s;
+
+}
+
+.portfolio-item .portfolio-img:hover .portfolio-shadow-layer {
+    cursor: pointer;
+    opacity: 1;
+
+}
+
+.portfolio-shadow-layer .fa-file-image,
+.portfolio-shadow-layer .fa-link,
+.portfolio-shadow-layer .fa-file-video {
+
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    color:#FF305B;
 }
