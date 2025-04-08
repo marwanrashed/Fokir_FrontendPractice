@@ -98,33 +98,33 @@
                 <!-- TODO: Dotted Line hr -->
                 <hr />
                 <!-- TODO: div UL list with bullet points -->
-                <table>
-                    <tr>
-                        <td>
-                            <li><span>Name:</span> Adam smith</li>
-                        </td>
-                        <td>
-                            <li><span>Job Title:</span> UI/UX Designer</li>
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <li><span>Age:</span> 26 Year</li>
+                <tr>
+                    <td>
+                        <li><span>Name:</span> Adam smith</li>
+                    </td>
+                    <td>
+                        <li><span>Job Title:</span> UI/UX Designer</li>
 
-                        </td>
-                        <td>
-                            <li><span>Location:</span> United States, US</li>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <li><span>Freelance:</span> Available</li>
-                        </td>
-                        <td>
-                            <li><span>E-mail:</span> example@gmail.com</li>
-                        </td>
-                    </tr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <li><span>Age:</span> 26 Year</li>
+
+                    </td>
+                    <td>
+                        <li><span>Location:</span> United States, US</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <li><span>Freelance:</span> Available</li>
+                    </td>
+                    <td>
+                        <li><span>E-mail:</span> example@gmail.com</li>
+                    </td>
+                </tr>
                 </table>
                 <!-- TODO: two anchors as buttons with font awesome icons-->
                 <a href="#home">Download CV <i class="fa-solid fa-download"></i></a>
@@ -322,9 +322,36 @@
     <div id="contact" class="contact">
         <div class="common-container">
             <div class="contact-container">
-                <div class="contact-container">
-                    <h2> Contact Us</h2>
-                </div>
+                <h2 class="source-sans-3-header"> Contact Us</h2>
+
+                <form>
+                    <div class="contact-form">
+                        <div class="contact-name-email-container">
+                            <div class="name-container"><input class="contact-name-input" type="text" name="FirstName"
+                                    id="userFirstName" data-error="Firstname is required." placeholder="Name"
+                                    required /></div>
+                            <div class="email-container">
+                                <input class="contact-email-input" type="email" name="Email" id="userEmail"
+                                    data-error="Firstname is required." placeholder="Email" required />
+                            </div>
+                            <div class="clear-fix"></div>
+                        </div>
+                        <div class="subject-container">
+                            <input class="contact-subject"type="text" name="Subject" id="subject" placeholder="Subject" required />
+                        </div>
+
+                        <div class="message-container">
+                            <textarea data-error="Please leave us a message." required="required" rows="4" placeholder="Message for me" class="contact-message-input" name="message" id="form_message" spellcheck="false" ></textarea>
+                        </div>
+
+                        <div class="form-button">
+                            <input type="submit" value="Send message" class="send-button">
+                        </div>
+                        
+                    </div>
+
+
+                </form>
             </div>
 
         </div>
@@ -341,7 +368,9 @@
                     <i class="fa-brands fa-google"></i>
                     <i class="fa-brands fa-github"></i>
                 </div>
-                <p class="roboto-16px">Copy Right 2025 © By <a href="https://github.com/marwanrashed/Fokir_FrontendPractice" target="blank">Marwan Rashed</a> All Rights Reserved</p>
+                <p class="roboto-16px">Copy Right 2025 © By <a
+                        href="https://github.com/marwanrashed/Fokir_FrontendPractice" target="blank">Marwan Rashed</a>
+                    All Rights Reserved</p>
             </div>
 
 

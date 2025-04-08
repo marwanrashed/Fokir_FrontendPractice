@@ -138,7 +138,7 @@
     padding: 100px 0;
 }
 
-.service-inner-container, 
+.service-inner-container,
 .portfolio-container,
 .testimonial-container,
 .blog-container,
@@ -149,7 +149,7 @@
     margin: auto;
 }
 
-.footer-container{
+.footer-container {
 
     width: 40%;
     margin: auto;
@@ -479,7 +479,7 @@
 }
 
 .portfolio .portfolio-menu li:hover {
-    color:#FF305B;
+    color: #FF305B;
     cursor: pointer;
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -531,15 +531,16 @@
     bottom: 20px;
     right: 20px;
     font-size: 24px;
-    color:#FF305B;
+    color: #FF305B;
 }
+
 /* Stats Section */
 
 .stats {
     text-align: center;
 }
 
-.stats i, 
+.stats i,
 .stats h2 {
     margin-bottom: 20px;
 
@@ -551,7 +552,8 @@
     color: #FF305B;
 }
 
-.stats h2, .stats h3 {
+.stats h2,
+.stats h3 {
 
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -578,6 +580,86 @@
 
 /* contact us section */
 
+.contact {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-form {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-form .contact-name-email-container,
+.contact-form .subject-container,
+.contact-form .message-container {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.contact-form .subject-container,
+.contact-form .message-container {
+
+    padding: 0 30px;
+
+}
+
+.name-container, .email-container {
+    
+    width: 50%;
+    height: 40px;
+    float: left;
+    padding: 0 30px;
+    margin: auto;
+}
+
+.contact-form .contact-name-email-container .contact-name-input,
+.contact-form .contact-name-email-container .contact-email-input,
+.contact-subject,
+.contact-message-input {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.contact-form .contact-subject
+{
+
+    height: 50px;
+}
+
+.contact-form .contact-message-input {
+    height: 100px;
+}
+
+.form-button {
+    width: 20%;
+    padding: 0 30px;
+}
+
+.send-button
+{
+    background-color: #FF305B;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: 0;
+    border-radius: 5%;
+    cursor: pointer;
+    text-transform: uppercase;
+
+
+}
 
 
 /* footer section */
@@ -590,7 +672,7 @@
     text-align: center;
 }
 
-.footer .footer-container .social-icons{
+.footer .footer-container .social-icons {
     width: 100%;
     margin-bottom: 20px;
 }
@@ -606,4 +688,3 @@
     color: #FF305B;
     text-decoration: none;
 }
-
