@@ -246,13 +246,46 @@
     width: 100%;
     text-align: center;
 }
-
-.hero-content p {
+.hero-content h3, p {
     color: #FFFFFF;
     margin: 25px 0;
-    font-weight: 800;
-    font-size: 20px;
 }
+.hero-content h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+.hero-content p {
+    font-weight: 300;
+    font-size: 26px;
+    margin: auto;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    width: fit-content;
+    animation: typing 1s ease-in-out infinite alternate;
+}
+
+.hero-content p::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #FFFFFF;
+}
+
+@keyframes typing {
+    from {
+        width: 30%;
+    }
+    to {
+        width: 20%;
+    }
+}
+
 
 .hero-content h1 {
     color: #FF305B;
