@@ -47,7 +47,7 @@
 
 .service h2,
 .portfolio h2,
-.testimonial h2,
+.feedback h2,
 .blog h2,
 .contact h2 {
     position: relative;
@@ -58,7 +58,7 @@
 
 .service h2::before,
 .portfolio h2::before,
-.testimonial h2::before,
+.feedback h2::before,
 .blog h2::before,
 .contact h2::before {
     content: "";
@@ -74,7 +74,7 @@
 
 .service h2::after,
 .portfolio h2::after,
-.testimonial h2::after,
+.feedback h2::after,
 .blog h2::after,
 .contact h2::after {
     content: "";
@@ -140,7 +140,7 @@
 
 .service-inner-container,
 .portfolio-container,
-.testimonial-container,
+.feedback-container,
 .blog-container,
 .contact-container {
 
@@ -576,6 +576,107 @@
 .stats-card .stats-item {
     float: left;
     width: 23%;
+}
+/* feedback section */
+
+.feedback {
+    text-align: center;
+}
+
+.feedback-card {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    padding: 40px;
+    position: relative;
+    background: #f2f2f2;
+    padding: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.feedback-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: #FF305B;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  }
+
+.feedback-avatar {
+    width: 15%;
+    float: left;
+    margin: 12px auto;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    z-index: 999;
+}
+
+.feedback-card .feedback-avatar img{
+    width: 100%;
+    z-index: 999;
+}
+
+.feedback-content {
+    width: 80%;
+    float: left;
+    padding: 0 20px;
+}
+
+.feedback-content * {
+    margin-bottom: 10px;
+}
+
+.feedback-content h3,
+.feedback-content h4 {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal; 
+}
+.feedback-content h3 {
+    font-size: 26px;
+    color: #323232;
+}
+.feedback-content h4 {
+    font-size: 15px;
+    color: #777777;
+}
+
+.feedback-content p {
+    color: #555555;
+    line-height: 25px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.feedback-stars {
+    color: #F1C30D;
+}
+.feedback-fake-switch {
+    width: 10%;
+    margin: auto;
+}
+.feedback-fake-switch .elipsoid-shape {
+    float: left;
+    width: 25px;
+    height: 10px;
+    background-color: #FF305B;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.feedback-fake-switch .circle {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #FF305B;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 /* blog section */
